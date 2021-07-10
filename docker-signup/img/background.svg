@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="635px" viewBox="0 0 1440 635" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+  <title>Group 23 Copy</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <filter x="-21.3%" y="-37.2%" width="142.6%" height="174.3%" filterUnits="objectBoundingBox" id="filter-1">
+      <feGaussianBlur stdDeviation="14.6177455" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+    <path d="M0,0 L1440,0 L1440,101.186342 L446.754929,631.863212 C440.761579,635.065375 433.552354,635.005408 427.613101,631.703989 L0,394.009108 L0,0 Z" id="path-2"></path>
+    <filter x="-36.7%" y="-70.7%" width="173.4%" height="241.4%" filterUnits="objectBoundingBox" id="filter-4">
+      <feGaussianBlur stdDeviation="14.6177455" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+  </defs>
+  <g id="HomePage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group-23-Copy">
+      <polygon id="Rectangle-Copy-17" fill="#000000" opacity="0.0463727679" filter="url(#filter-1)" points="874.866146 524 760 455.484602 851.133854 406 966 474.515398"></polygon>
+      <g id="Group">
+        <mask id="mask-3" fill="white">
+          <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Rectangle-Copy-16" fill="#2596EC" xlink:href="#path-2"></use>
+        <polygon id="Rectangle" fill="#44A8F4" opacity="0.386607143" mask="url(#mask-3)" points="1226 -175 1690 83.265625 1690 617.265625 1226 359"></polygon>
+        <polygon id="Rectangle-Copy-2" fill="#44A8F4" opacity="0.386607143" mask="url(#mask-3)" points="-70.953125 -304.375 778.675781 92.7578125 778.675781 683.320312 -70.953125 229.625"></polygon>
+        <polygon id="Rectangle-Copy" fill="#44A8F4" opacity="0.386607143" mask="url(#mask-3)" points="886 32 1350 290.265625 1350 824.265625 886 566"></polygon>
+        <polygon id="Rectangle-Copy-2" fill="#2390E2" opacity="0.386607143" mask="url(#mask-3)" points="886 32 778.675781 92.7578125 778.675781 626.757812 886 566"></polygon>
+        <g id="Group-7-Copy-6" mask="url(#mask-3)">
+          <g transform="translate(304.000000, 409.000000)">
+            <polygon id="Star-Copy" fill="#2596EC" points="154.5 319 6 235.737867 6 83.2621326 154.5 0 303 83.2621326 303 235.737867"></polygon>
+            <polygon id="Rectangle-2-Copy-5" fill="#2390E2" points="0 85 152 170 152 323 0 238"></polygon>
+            <polygon id="Rectangle-2-Copy-6" fill="#44A8F4" points="152 170 304 85 304 238 152 323"></polygon>
+            <polygon id="Rectangle-2-Copy-7" fill="#2596EC" points="153 169 306 84.5 153.199219 0 0 84.5"></polygon>
+          </g>
+        </g>
+        <g id="Group-7-Copy-7" mask="url(#mask-3)">
+          <g transform="translate(0.000000, 96.000000)">
+            <polygon id="Star-Copy" fill="#2596EC" points="88.5 184 3 135.974193 3 48.0258069 88.5 0 174 48.0258069 174 135.974193"></polygon>
+            <polygon id="Rectangle-2-Copy-5" fill="#2390E2" points="1.26217745e-29 49 87 97.9285714 87 186 1.26217745e-29 142.726562"></polygon>
+            <polygon id="Rectangle-2-Copy-6" fill="#44A8F4" points="87 97.9285714 174 49 174 137.071429 87 186"></polygon>
+            <polygon id="Rectangle-2-Copy-7" fill="#2596EC" points="88 97 176 48.5 88.1145833 0 0 48.5"></polygon>
+          </g>
+        </g>
+      </g>
+      <ellipse id="Oval-5" fill="#53CEAE" cx="914" cy="355.5" rx="5" ry="3.5"></ellipse>
+      <g id="Group-7-Copy-8" opacity="0.600000024" transform="translate(693.000000, 253.000000)">
+        <polygon id="Star-Copy" fill="#2596EC" points="111.635309 181.989154 96.0811238 173.108533 96.0811238 92.3723731 176.395242 48.2849329 191.949427 57.1655542 191.949427 137.901714"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#1E82CE" points="0.258139318 44.7547742 111.293547 102.991644 111.293547 184 0.258139318 125.76313"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" points="111.293547 102.991644 194 57.9870017 194 138.995358 111.293547 184"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#53B2FB" points="0.879359899 45.1610542 83.585813 0.252166492 193.334272 58.1175814 110.520128 103.026469"></polygon>
+      </g>
+      <g id="Group-7-Copy" transform="translate(804.000000, 312.000000)">
+        <polygon id="Star-Copy" fill="#FFFFFF" points="83.3429752 170.535747 2.74380165 126.428158 2.74380165 45.6551002 83.3429752 1.54751131 163.942149 45.6551002 163.942149 126.428158"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#FBFBFB" points="0 44.9294118 83 89.9546218 83 171 0 125.97479"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" opacity="0.299776786" points="83 89.9546218 166 44.9294118 166 125.97479 83 171"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#FFFFFF" points="83 89.8588235 166 44.9294118 83.1080729 0 0 44.9294118"></polygon>
+      </g>
+      <g id="Group-2-Copy" transform="translate(1124.000000, 171.000000)">
+        <g id="Group-7-Copy-10">
+          <polygon id="Star-Copy" fill="#2596EC" points="8.96250323 66.9629136 0.276956353 62.2687071 0.276956353 22.5907139 39.6054688 0.923828125 48.2910156 5.61803466 48.2910156 25.4570312 48.2910156 45.2960278"></polygon>
+          <polygon id="Rectangle-2-Copy-5" fill="#258CDB" points="0.599609375 22.5273438 6.07128906 25.7019072 6.07128906 65.5136719 0.599609375 62.3391085"></polygon>
+          <polygon id="Rectangle-2-Copy-7" fill="#40A5F3" points="6.86914062 25.671875 47.0185547 3.97460938 40.8066406 0.322265625 0.25390625 22.3928539"></polygon>
+        </g>
+      </g>
+      <g id="Group-7-Copy-2" transform="translate(894.000000, 212.000000)">
+        <polygon id="Star-Copy" fill="#2596EC" points="14 30 1.27897692e-13 22.1697054 1.54321e-13 7.8302946 14 0 28 7.8302946 28 22.1697054"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#2390E2" points="0 8 14 15.8571429 14 30 0 22.1428571"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#44A8F4" points="14 15.8571429 28 8 28 22.1428571 14 30"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#2596EC" points="14.5 15 29 7.5 14.5188802 0 0 7.5"></polygon>
+      </g>
+      <g id="Group-7-Copy-9" opacity="0.349999994" transform="translate(878.000000, 101.000000)">
+        <polygon id="Star-Copy" fill="#2596EC" points="59.5 78 31 62.078401 31 32.921599 59.5 17 88 32.921599 88 62.078401"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#2390E2" points="1.49316406 16.3037109 59 49.4285714 59 79 1.49316406 45.8751395"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#44A8F4" points="59 49.4285714 88 33 88 62.5714286 59 79"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#2596EC" points="59.5 49 89 33 29.6240234 0.241210938 0.0856119792 16.2412109"></polygon>
+      </g>
+      <g id="Group-7-Copy-3" transform="translate(937.000000, 134.000000)">
+        <polygon id="Star-Copy" fill="#FFFFFF" points="5.88964844 47.7246094 1 45.078401 1 15.921599 29.5 0 34.3896484 2.64620839 34.3896484 31.8030104"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#FBFBFB" points="0 16 5.12646484 19.4545898 5.12646484 49.0260184 0 45.5714286"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" points="5 19.4285714 34.3634033 2.70373535 34.3634033 31.8964844 5 49"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#FFFFFF" points="5.08911133 19.460083 34.3994141 2.73925781 29.5384115 0 0 16"></polygon>
+      </g>
+      <g id="Group-7-Copy-4" transform="translate(999.000000, 216.000000)">
+        <polygon id="Star-Copy" fill="#FFFFFF" points="15.5 30 1 22.1697054 1 7.8302946 15.5 0 30 7.8302946 30 22.1697054"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#FBFBFB" points="0 8 15 16.2142857 15 31 0 22.7857143"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" points="15 16.2142857 30 8 30 22.7857143 15 31"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#FFFFFF" points="15 16 30 8 15.0195312 0 0 8"></polygon>
+      </g>
+      <g id="Group-7-Copy-5" transform="translate(959.000000, 212.000000)">
+        <polygon id="Star-Copy" fill="#FFFFFF" points="9.5 18 1 13.3018232 1 4.69817676 9.5 0 18 4.69817676 18 13.3018232"></polygon>
+        <polygon id="Rectangle-2-Copy-5" fill="#FBFBFB" points="0 5 9 10 9 19 0 14"></polygon>
+        <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" points="9 10 18 5 18 14 9 19"></polygon>
+        <polygon id="Rectangle-2-Copy-7" fill="#FFFFFF" points="9 10 18 5 9.01171875 0 0 5"></polygon>
+      </g>
+      <g id="Group-2" transform="translate(1129.000000, 174.000000)">
+        <polygon id="Rectangle-Copy-18" fill="#000000" opacity="0.0463727679" filter="url(#filter-4)" points="87.3265906 131.027939 7 89.6338248 45.5647235 69 126.439724 110.137091"></polygon>
+        <g id="Group-7-Copy-10">
+          <polygon id="Star-Copy" fill="#FFFFFF" points="86.6673554 109.011765 0.276956353 62.2687071 0.276956353 22.5907139 39.6054688 0.923828125 125.995868 47.6668858 125.995868 87.3448789"></polygon>
+          <polygon id="Rectangle-2-Copy-6" fill="#E7E8E9" points="86.5 70.1882353 127 48.0705882 127 87.8823529 86.5 110"></polygon>
+          <polygon id="Rectangle-2-Copy-5" fill="#FBFBFB" points="0.599609375 22.5273438 86.5 70.1882353 86.5 110 0.599609375 62.3391085"></polygon>
+          <polygon id="Rectangle-2-Copy-7" fill="#FFFFFF" points="86.5 70.1411765 127 48.0705882 40.8066406 0.322265625 0.25390625 22.3928539"></polygon>
+        </g>
+      </g>
+      <path d="" id="Path-4" stroke="#979797" stroke-width="5" stroke-linecap="square"></path>
+      <path d="" id="Path-6" stroke="#979797" stroke-width="5" stroke-linecap="square"></path>
+    </g>
+  </g>
+</svg>
