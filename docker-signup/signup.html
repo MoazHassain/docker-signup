@@ -24,7 +24,7 @@
                         MASTER <span>ACADEMY</span>
                     </div>
                     <div class="search-field" >
-                        <input type="search" name="search" id="search" placeholder="Search for great content (e.g., mysql)" autocomplete="off">
+                        <input type="search"  onfocus="iconChange()" o name="search" id="search" placeholder="Search for great content (e.g., mysql)" autocomplete="off">
                         <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="24px">
                             <path d="M15.864 14.32h-.813l-.285-.277c1.008-1.174 1.615-2.696 1.615-4.354C16.38 5.993 13.384 3 9.69 3 5.994 3 3 5.995 3 9.69c0 3.694 2.995 6.688 6.69 6.688 1.656 0 3.18-.607 4.353-1.615l.277.287v.813L19.467 21 21 19.467l-5.136-5.147zm-6.175 0c-2.564 0-4.633-2.068-4.633-4.63s2.07-4.632 4.63-4.632 4.632 2.068 4.632 4.63-2.07 4.632-4.63 4.632z"></path>
                         </svg>
@@ -44,8 +44,51 @@
                         <div class="btn">
                             <a href="" role="button">Sign Up</a>
                         </div>
+                        
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="btn">
+                            <svg width="25" height="25" viewBox="0 0 25 25"  xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.50033 5C2.27931 5 2.06735 5.0878 1.91107 5.24408C1.75479 5.40036 1.66699 5.61232 1.66699 5.83333C1.66699 6.05435 1.75479 6.26631 1.91107 6.42259C2.06735 6.57887 2.27931 6.66667 2.50033 6.66667H22.5003C22.7213 6.66667 22.9333 6.57887 23.0896 6.42259C23.2459 6.26631 23.3337 6.05435 23.3337 5.83333C23.3337 5.61232 23.2459 5.40036 23.0896 5.24408C22.9333 5.0878 22.7213 5 22.5003 5H2.50033ZM1.66699 12.5C1.66699 12.279 1.75479 12.067 1.91107 11.9107C2.06735 11.7545 2.27931 11.6667 2.50033 11.6667H22.5003C22.7213 11.6667 22.9333 11.7545 23.0896 11.9107C23.2459 12.067 23.3337 12.279 23.3337 12.5C23.3337 12.721 23.2459 12.933 23.0896 13.0893C22.9333 13.2455 22.7213 13.3333 22.5003 13.3333H2.50033C2.27931 13.3333 2.06735 13.2455 1.91107 13.0893C1.75479 12.933 1.66699 12.721 1.66699 12.5ZM1.66699 19.1667C1.66699 18.9457 1.75479 18.7337 1.91107 18.5774C2.06735 18.4211 2.27931 18.3333 2.50033 18.3333H22.5003C22.7213 18.3333 22.9333 18.4211 23.0896 18.5774C23.2459 18.7337 23.3337 18.9457 23.3337 19.1667C23.3337 19.3877 23.2459 19.5996 23.0896 19.7559C22.9333 19.9122 22.7213 20 22.5003 20H2.50033C2.27931 20 2.06735 19.9122 1.91107 19.7559C1.75479 19.5996 1.66699 19.3877 1.66699 19.1667Z" fill="#e4ab0d"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="responsive-content">
+                <div class="head">
+                    <div class="title">
+                        <h2 class="medium">Browse</h2>
+                    </div>
+                    <div class="cls-btn">
+                        <button>
+                            <svg width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6663 3.33301L3.33301 16.6663M16.6663 16.6663L3.33301 3.33301L16.6663 16.6663Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-course">
+                        <a href="">Explore</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-Project">
+                        <a href="/pages/register.html">Pricing</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-Certificate">
+                        <a href="/pages/register.html">Sign In</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="btn">
+                        <a href="" role="button">Sign Up</a>
+                    </div>
+                </div>
+                
             </div>
         </header>
         <div class="container">
@@ -71,6 +114,9 @@
                         </div>
                         <div class="email-field">
                             <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                        </div>
+                        <div class="phone-field">
+                            <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="off">
                         </div>
                         <div class="pass-field">
                             <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off">
@@ -234,15 +280,26 @@
     //     icon.classList.add("dark-icon");
     // }
 
-    // $(function() {
-    // $("#search").on("click", function(e) {
-    //     $(".search-icon").addClass("dark-icon");
-    // });
-    // $(document).on("click", function(e) {
-    //     if ($(e.target).is(".search-icon, #search") === false) {
-    //     $(".search-icon").removeClass("dark-icon");
-    //     }
-    // });
-    // });
+    var showResponsiveBtn = document.querySelector(".hamburger-menu");
+    var hideResponsiveBtn = document.querySelector(".cls-btn");
+    var responsiveMenu =document.querySelector(".responsive-content");
+
+    showResponsiveBtn.addEventListener("click", function(){
+        responsiveMenu.classList.add("show-navcontent");
+    });
+    hideResponsiveBtn.addEventListener("click", function(){
+        responsiveMenu.classList.remove("show-navcontent");
+    })
+
+    $(function() {
+    $(".search-field").on("click", function(e) {
+        $(".search-icon").addClass("dark-icon");
+    });
+    $(document).on("click", function(e) {
+        if ($(e.target).is(".search-icon, .search-field") === false) {
+        $(".search-icon").removeClass("dark-icon");
+        }
+    });
+    });
 </script>
 </html>
