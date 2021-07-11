@@ -5,13 +5,80 @@ button {
   cursor: pointer;
 }
 
-input {
+input, select {
   border: none;
   outline: none;
   background-color: #fafafb;
   font-size: 14px;
   border-bottom: 2px solid #d1d1d1;
   padding: 8px;
+}
+
+input:hover, input:focus, select:hover, select:focus {
+  border-bottom: 2px solid #208cff;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  /* font-size: 22px; */
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2e92fd;
+  border: 1px solid #2e92fd;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 3px;
+  top: -1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  /* border-radius: 4px; */
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 * {
@@ -320,6 +387,9 @@ header .grid-wrap .col-2 .nav-bar .btn a:hover {
   .hero-bgimg header .grid-wrap .col-1 .logo {
     white-space: normal;
   }
+  .hero-bgimg header .grid-wrap .col-1 .search-field {
+    display: none;
+  }
   .hero-bgimg header .grid-wrap .col-1 .search-field input {
     width: 50%;
   }
@@ -545,13 +615,11 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 .hero-bgimg .container {
   width: 1280px;
   margin: 0 auto;
-  height: 70vh;
+  margin-top: 100px;
+  height: 95vh;
   min-height: 700px;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (max-width: 1280px) {
@@ -641,6 +709,92 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   width: 100%;
 }
 
+.hero-bgimg .container .grid-wrap .col-2 form .label {
+  font-size: 14px;
+  color: #626262;
+  margin-bottom: 5px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div {
+  position: relative;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 14px;
+  color: #7a7a7a;
+  pointer-events: none;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div .icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div .icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div .icon svg path {
+  fill: #626262;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .dob-field > div select {
+  width: 100%;
+  padding-top: 35px;
+  -webkit-appearance: none;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field {
+  position: relative;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .pass-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .pass-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .pass-icon svg path {
+  fill: #007bff;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .show-pass {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .show-pass svg {
+  width: 13px;
+  height: 13px;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .show-pass svg path {
+  fill: #626262;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .pass-field .hide-icon {
+  opacity: 0;
+}
+
 .hero-bgimg .container .grid-wrap .col-2 form .update-notify-field {
   margin-top: 30px;
   display: -ms-grid;
@@ -655,15 +809,19 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   margin-bottom: 20px;
 }
 
-.hero-bgimg .container .grid-wrap .col-2 form .update-notify-field input[type="checkbox"] {
-  width: auto;
-  border-radius: 0px;
-}
-
 .hero-bgimg .container .grid-wrap .col-2 form .update-notify-field label {
   font-size: 12px;
   color: #838383;
   line-height: 1em;
+  white-space: normal;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .update-notify-field label p {
+  line-height: 1.5em;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .update-notify-field label p br {
+  display: none;
 }
 
 .hero-bgimg .container .grid-wrap .col-2 form .btn button {
@@ -686,6 +844,31 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   color: #6e6e6e;
 }
 
+.hero-bgimg .container .grid-wrap .col-2 form .error-msg {
+  display: none;
+  padding: 8px;
+  font-size: 14px;
+  color: #ce0000;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .error input {
+  border-color: #ce0000;
+}
+
+.hero-bgimg .container .grid-wrap .col-2 form .error .error-msg {
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero-bgimg .container .grid-wrap .col-2 form .update-notify-field label p br {
+    display: block;
+  }
+  .checkmark {
+    -webkit-transform: translateY(-110%);
+            transform: translateY(-110%);
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .hero-bgimg .container .grid-wrap {
     grid-gap: 200px;
@@ -706,17 +889,17 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   .hero-bgimg .container .grid-wrap {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-gap: 100px;
-    text-align: center;
-    width: 70%;
+    grid-gap: 80px;
+    width: 80%;
     margin: auto;
   }
   .hero-bgimg .container .grid-wrap .col-1 {
-    height: 60vh;
+    height: 40vh;
     display: -ms-grid;
     display: grid;
-    -ms-flex-line-pack: end;
-        align-content: end;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
   }
 }
 
@@ -729,19 +912,21 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   .hero-bgimg .container .grid-wrap {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-gap: 100px;
+    grid-gap: 0px !important;
     text-align: center;
     width: 100% !important;
     margin: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .hero-bgimg .container .grid-wrap .col-1 {
-    height: 60vh;
     display: -ms-grid;
     display: grid;
-    -ms-flex-line-pack: end;
-        align-content: end;
+    -ms-flex-line-pack: start !important;
+        align-content: start !important;
     width: 85%;
-    margin: auto;
+    margin: 0 auto;
   }
   .hero-bgimg .container .grid-wrap .col-2 {
     width: 100%;
@@ -751,11 +936,11 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   .hero-bgimg .container .grid-wrap .col-2 form {
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 40px;
+    padding: clamp(20px, 2.5vw, 40px);
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   .hero-bgimg .container {
     min-height: auto;
     height: auto;
@@ -763,16 +948,17 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   .hero-bgimg .container .grid-wrap {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-gap: 100px;
+    grid-gap: 0px;
     text-align: center;
     width: 90%;
     margin: auto;
   }
   .hero-bgimg .container .grid-wrap .col-1 {
+    height: 60vh;
     display: -ms-grid;
     display: grid;
-    -ms-flex-line-pack: end;
-        align-content: end;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
 }
 /*# sourceMappingURL=signup.css.map */

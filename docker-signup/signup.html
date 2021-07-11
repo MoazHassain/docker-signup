@@ -21,7 +21,7 @@
             <div class="grid-wrap">
                 <div class="col-1">
                     <div class="logo">
-                        MASTER <span>ACADEMY</span>
+                        MASTER <span>TASK</span>
                     </div>
                     <div class="search-field" >
                         <input type="search"  onfocus="iconChange()" o name="search" id="search" placeholder="Search for great content (e.g., mysql)" autocomplete="off">
@@ -109,21 +109,135 @@
                         <div class="goto-signin">
                             Already have an account? <a href="">Sign In</a>
                         </div>
-                        <div class="id-field">
-                            <input type="text" name="id" id="id" placeholder="Docker ID" autocomplete="off">
+                        <div class="field id-field error" >
+                            <input type="text" name="id" id="id" placeholder="Name" autocomplete="off">
+                            <p class="error-msg">Use 4 to 30 letters & digits only.</p>
                         </div>
-                        <div class="email-field">
-                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                        
+                        <div class="label">Date of birth</div>
+                        <div class="dob-wrap">
+                            <div class="dob-field">
+                                
+                                <div class="date-field">
+                                    <label for="date"> Date</label>
+                                    <div class="icon">
+                                        <svg width="513" height="513" viewBox="0 0 513 513" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                            <path d="M505.755 123.592C497.414 115.251 483.931 115.251 475.59 123.592L256.005 343.176L36.4207 123.592C28.0798 115.251 14.5967 115.251 6.25575 123.592C-2.08525 131.933 -2.08525 145.416 6.25575 153.757L240.923 388.424C245.083 392.584 250.544 394.675 256.006 394.675C261.468 394.675 266.929 392.584 271.089 388.424L505.756 153.757C514.096 145.416 514.096 131.933 505.755 123.592Z" fill="black"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0">
+                                            <rect width="512.011" height="512.011" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <select name="date" id="date">
+                                        <option value=""  disabled selected hidden></option>
+                                        
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                        <option value="5">6</option>
+                                        <option value="6">7</option>
+                                        <option value="7">8</option>
+                                        <option value="8">9</option>
+                                        <option value="9">10</option>
+                                    </select>
+                                </div>
+                                <div class="month-field">
+                                    <label for="month"> Month</label>
+                                    <div class="icon">
+                                        <svg width="513" height="513" viewBox="0 0 513 513" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                            <path d="M505.755 123.592C497.414 115.251 483.931 115.251 475.59 123.592L256.005 343.176L36.4207 123.592C28.0798 115.251 14.5967 115.251 6.25575 123.592C-2.08525 131.933 -2.08525 145.416 6.25575 153.757L240.923 388.424C245.083 392.584 250.544 394.675 256.006 394.675C261.468 394.675 266.929 392.584 271.089 388.424L505.756 153.757C514.096 145.416 514.096 131.933 505.755 123.592Z" fill="black"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0">
+                                            <rect width="512.011" height="512.011" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <select name="month" id="month">
+                                        <option value=""  disabled selected hidden></option>
+                                        
+                                        <option value="0">1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="4">5</option>
+                                        <option value="5">6</option>
+                                        <option value="6">7</option>
+                                        <option value="7">8</option>
+                                        <option value="8">9</option>
+                                        <option value="9">10</option>
+                                    </select>
+                                </div>
+                                <div class="year-field">
+                                    <label for="year"> Year</label>
+                                    <div class="icon">
+                                        <svg width="513" height="513" viewBox="0 0 513 513" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                            <path d="M505.755 123.592C497.414 115.251 483.931 115.251 475.59 123.592L256.005 343.176L36.4207 123.592C28.0798 115.251 14.5967 115.251 6.25575 123.592C-2.08525 131.933 -2.08525 145.416 6.25575 153.757L240.923 388.424C245.083 392.584 250.544 394.675 256.006 394.675C261.468 394.675 266.929 392.584 271.089 388.424L505.756 153.757C514.096 145.416 514.096 131.933 505.755 123.592Z" fill="black"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0">
+                                            <rect width="512.011" height="512.011" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <select name="year" id="year">
+                                        <option value=""  disabled selected hidden></option>
+                                        
+                                        <option value="0">2021</option>
+                                        <option value="1">2020</option>
+                                        <option value="2">2019</option>
+                                        <option value="3">2018</option>
+                                        <option value="4">2017</option>
+                                        <option value="5">2016</option>
+                                        <option value="6">2015</option>
+                                        <option value="7">2014</option>
+                                        <option value="8">2013</option>
+                                        <option value="9">2012</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="phone-field">
+                        <div class="field phone-field" onclick="errorMsg()">
                             <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="off">
+                            <p class="error-msg">Use 4 to 30 digits only.</p>
                         </div>
-                        <div class="pass-field">
+                        <div class="field email-field">
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                            <p class="error-msg">Please enter a valid email address.</p>
+                        </div>
+                        <div class="field pass-field">
+                            <div class="pass-icon">
+                                <div class="hide-pass hide-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.28114 12C9.28114 12.6962 9.5577 13.3639 10.05 13.8562C10.5423 14.3484 11.2099 14.625 11.9061 14.625C12.6023 14.625 13.27 14.3484 13.7623 13.8562C14.2546 13.3639 14.5311 12.6962 14.5311 12C14.5311 11.3038 14.2546 10.6361 13.7623 10.1438C13.27 9.65156 12.6023 9.375 11.9061 9.375C11.2099 9.375 10.5423 9.65156 10.05 10.1438C9.5577 10.6361 9.28114 11.3038 9.28114 12V12ZM22.0827 11.3953C19.8608 6.71484 16.5022 4.35938 11.9999 4.35938C7.4952 4.35938 4.13895 6.71484 1.91708 11.3977C1.82796 11.5864 1.78174 11.7925 1.78174 12.0012C1.78174 12.2099 1.82796 12.416 1.91708 12.6047C4.13895 17.2852 7.49755 19.6406 11.9999 19.6406C16.5046 19.6406 19.8608 17.2852 22.0827 12.6023C22.2632 12.2227 22.2632 11.782 22.0827 11.3953V11.3953ZM11.9061 16.125C9.62802 16.125 7.78114 14.2781 7.78114 12C7.78114 9.72188 9.62802 7.875 11.9061 7.875C14.1843 7.875 16.0311 9.72188 16.0311 12C16.0311 14.2781 14.1843 16.125 11.9061 16.125Z" fill="#000"/>
+                                    </svg>
+                                </div>
+                                <div class="show-pass ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9061 14.6251C12.6023 14.6251 13.27 14.3485 13.7623 13.8562C14.2546 13.3639 14.5311 12.6963 14.5311 12.0001C14.5311 11.9232 14.5276 11.847 14.5211 11.7718L11.6779 14.615C11.7531 14.6216 11.829 14.6251 11.9061 14.6251ZM20.5949 3.88038L19.5936 2.88007C19.5585 2.84493 19.5108 2.8252 19.4611 2.8252C19.4114 2.8252 19.3637 2.84493 19.3286 2.88007L16.7664 5.44296C15.3529 4.72062 13.7641 4.35944 11.9999 4.35944C7.4952 4.35944 4.13427 6.70554 1.91708 11.3977C1.82796 11.5864 1.78174 11.7925 1.78174 12.0012C1.78174 12.2099 1.82796 12.416 1.91708 12.6048C2.80302 14.4708 3.86981 15.9666 5.11747 17.0919L2.63802 19.5704C2.60288 19.6055 2.58314 19.6532 2.58314 19.7029C2.58314 19.7526 2.60288 19.8003 2.63802 19.8355L3.63856 20.836C3.67372 20.8711 3.7214 20.8909 3.7711 20.8909C3.82081 20.8909 3.86848 20.8711 3.90364 20.836L20.5949 4.14569C20.6123 4.12828 20.6262 4.1076 20.6356 4.08484C20.645 4.06208 20.6499 4.03768 20.6499 4.01304C20.6499 3.9884 20.645 3.964 20.6356 3.94124C20.6262 3.91847 20.6123 3.8978 20.5949 3.88038ZM7.78114 12.0001C7.78108 11.2876 7.96556 10.5872 8.31661 9.96723C8.66767 9.34723 9.17333 8.82873 9.78433 8.46225C10.3953 8.09576 11.0908 7.89378 11.8031 7.87598C12.5154 7.85818 13.2201 8.02518 13.8486 8.36069L12.7091 9.50022C12.2495 9.35307 11.7583 9.33535 11.2894 9.449C10.8204 9.56265 10.3918 9.80329 10.0506 10.1445C9.70936 10.4857 9.46873 10.9143 9.35508 11.3833C9.24142 11.8523 9.25915 12.3435 9.4063 12.803L8.26677 13.9426C7.94699 13.3451 7.78014 12.6777 7.78114 12.0001V12.0001Z" fill="black"/>
+                                        <path d="M22.0826 11.3954C21.2576 9.65791 20.2756 8.24111 19.1367 7.14502L15.7584 10.5235C16.0432 11.2679 16.1063 12.0789 15.9402 12.8584C15.774 13.6379 15.3857 14.3526 14.8221 14.9162C14.2585 15.4798 13.5438 15.8681 12.7643 16.0343C11.9848 16.2004 11.1738 16.1373 10.4294 15.8525L7.56396 18.718C8.89334 19.3331 10.3719 19.6407 11.9997 19.6407C16.5044 19.6407 19.8654 17.2946 22.0826 12.6024C22.1717 12.4137 22.2179 12.2076 22.2179 11.9989C22.2179 11.7902 22.1717 11.5841 22.0826 11.3954V11.3954Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div>
                             <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off">
+                            <p class="error-msg">Password must be at least 9 characters.</p>
                         </div>
                         <div class="update-notify-field">
-                            <input type="checkbox" name="update-notify" id="update-notify">
-                            <label for="update-notify">Send me occasional product updates and announcements.</label>
+                            <label class="checkbox-container" for="notification"><p>Send me occasional product updates <br> and announcements.</p>
+                                <input type="checkbox" name="notification" id="notification" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            
                         </div>
                         <div class="btn">
                             <button type="submit">Sign Up</button>
@@ -145,7 +259,7 @@
             <div class="grid-wrap">
                 <div class="col-1">
                     <div class="logo">
-                        MASTER <span>ACADEMY</span>
+                        MASTER <span>TASK</span>
                     </div>
     
                 </div>
@@ -291,15 +405,35 @@
         responsiveMenu.classList.remove("show-navcontent");
     })
 
-    $(function() {
-    $(".search-field").on("click", function(e) {
-        $(".search-icon").addClass("dark-icon");
-    });
-    $(document).on("click", function(e) {
-        if ($(e.target).is(".search-icon, .search-field") === false) {
-        $(".search-icon").removeClass("dark-icon");
+    
+
+
+    function errorMsg() {
+        var inputField = document.querySelectorAll(".field");
+        var i;
+        for (i=0; i<inputField.length; i++){
+            inputField[i].classList.toggle("error");
         }
-    });
-    });
+    }
+
+
+    var passIcon = document.querySelector(".pass-icon");
+    var visibleIcon = document.querySelector(".hide-pass");
+    var hiddenIcon = document.querySelector(".show-pass");
+
+    passIcon.addEventListener("click", function(){
+        visibleIcon.classList.toggle("hide-icon");
+        hiddenIcon.classList.toggle("hide-icon");
+    })
+    // $(function() {
+    // $(".search-field").on("click", function(e) {
+    //     $(".search-icon").addClass("dark-icon");
+    // });
+    // $(document).on("click", function(e) {
+    //     if ($(e.target).is(".search-icon, .search-field") === false) {
+    //     $(".search-icon").removeClass("dark-icon");
+    //     }
+    // });
+    // });
 </script>
 </html>
