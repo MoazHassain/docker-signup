@@ -536,7 +536,7 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 }
 
 .hero-bgimg {
-  background: url("/img/background.svg");
+  background: url("../img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
