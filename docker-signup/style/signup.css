@@ -908,6 +908,7 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
     min-height: auto;
     height: auto;
     width: 100%;
+    margin-top: 50px;
   }
   .hero-bgimg .container .grid-wrap {
     -ms-grid-columns: auto;
@@ -944,6 +945,7 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   .hero-bgimg .container {
     min-height: auto;
     height: auto;
+    margin-top: 50px;
   }
   .hero-bgimg .container .grid-wrap {
     -ms-grid-columns: auto;
