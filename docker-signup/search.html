@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/search.css">
+</head>
+<body>
+    <div class="hero-bgimg">
+        <header>
+            <div class="grid-wrap">
+                <div class="col-1">
+                    <div class="logo">
+                        MASTER <span>TASK</span>
+                    </div>
+                    <div class="search-field" >
+                        <input type="search"  onfocus="iconChange()" o name="search" id="search" placeholder="Search for great content (e.g., mysql)" autocomplete="off">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="24px">
+                            <path d="M15.864 14.32h-.813l-.285-.277c1.008-1.174 1.615-2.696 1.615-4.354C16.38 5.993 13.384 3 9.69 3 5.994 3 3 5.995 3 9.69c0 3.694 2.995 6.688 6.69 6.688 1.656 0 3.18-.607 4.353-1.615l.277.287v.813L19.467 21 21 19.467l-5.136-5.147zm-6.175 0c-2.564 0-4.633-2.068-4.633-4.63s2.07-4.632 4.63-4.632 4.632 2.068 4.632 4.63-2.07 4.632-4.63 4.632z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="nav-bar">
+                        <div class="menu">
+                            <a href="">Explore</a>
+                        </div>
+                        <div class="menu">
+                            <a href="">Pricing</a>
+                        </div>
+                        <div class="menu">
+                            <a href="">Sign In</a>
+                        </div>
+                        <div class="btn">
+                            <a href="" role="button">Sign Up</a>
+                        </div>
+                        
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="btn">
+                            <svg width="25" height="25" viewBox="0 0 25 25"  xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.50033 5C2.27931 5 2.06735 5.0878 1.91107 5.24408C1.75479 5.40036 1.66699 5.61232 1.66699 5.83333C1.66699 6.05435 1.75479 6.26631 1.91107 6.42259C2.06735 6.57887 2.27931 6.66667 2.50033 6.66667H22.5003C22.7213 6.66667 22.9333 6.57887 23.0896 6.42259C23.2459 6.26631 23.3337 6.05435 23.3337 5.83333C23.3337 5.61232 23.2459 5.40036 23.0896 5.24408C22.9333 5.0878 22.7213 5 22.5003 5H2.50033ZM1.66699 12.5C1.66699 12.279 1.75479 12.067 1.91107 11.9107C2.06735 11.7545 2.27931 11.6667 2.50033 11.6667H22.5003C22.7213 11.6667 22.9333 11.7545 23.0896 11.9107C23.2459 12.067 23.3337 12.279 23.3337 12.5C23.3337 12.721 23.2459 12.933 23.0896 13.0893C22.9333 13.2455 22.7213 13.3333 22.5003 13.3333H2.50033C2.27931 13.3333 2.06735 13.2455 1.91107 13.0893C1.75479 12.933 1.66699 12.721 1.66699 12.5ZM1.66699 19.1667C1.66699 18.9457 1.75479 18.7337 1.91107 18.5774C2.06735 18.4211 2.27931 18.3333 2.50033 18.3333H22.5003C22.7213 18.3333 22.9333 18.4211 23.0896 18.5774C23.2459 18.7337 23.3337 18.9457 23.3337 19.1667C23.3337 19.3877 23.2459 19.5996 23.0896 19.7559C22.9333 19.9122 22.7213 20 22.5003 20H2.50033C2.27931 20 2.06735 19.9122 1.91107 19.7559C1.75479 19.5996 1.66699 19.3877 1.66699 19.1667Z" fill="#e4ab0d"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive-content">
+                <div class="head">
+                    <div class="title">
+                        <h2 class="medium">Browse</h2>
+                    </div>
+                    <div class="cls-btn">
+                        <button>
+                            <svg width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6663 3.33301L3.33301 16.6663M16.6663 16.6663L3.33301 3.33301L16.6663 16.6663Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-course">
+                        <a href="">Explore</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-Project">
+                        <a href="/pages/register.html">Pricing</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="nav-Certificate">
+                        <a href="/pages/register.html">Sign In</a>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <div class="btn">
+                        <a href="" role="button">Sign Up</a>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+    </div>
+    <div class="sub-header">
+        <div class="text">
+            
+                
+            <div class="wrap">
+                <p>Registered <span>Successfully</span></p>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 15.625L13.75 19.375L20 11.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="search-container">
+        <div class="msg">
+            <p><span>Thank You</span> for Joining</p>
+        </div>
+        <div class="content-wrap">
+            <!-- <div class="search-info">
+                <div class="text">
+                    1 - 25 of 596,501 results for <span class="search-in">docker</span>. <span class="clear">Clear search</span> 
+                </div>
+                <div class="filter-field">
+                    <select name="filter" id="filter">
+                        <option value="0">Most Popular</option>
+                        <option value="1">Recently Updated</option>
+                    </select>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="grid-wrap">
+                    <div class="col-1">
+                        <div class="img">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5937 7.40625 28.75 15 28.75C22.5937 28.75 28.75 22.5937 28.75 15C28.75 7.40625 22.5937 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8837 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5087L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.98 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="title">
+                            Docker
+                        </div>
+                        <div class="update">
+                            Updated 3 minutes ago
+                        </div>
+                        <div class="info">
+                            Docker in Docker!
+                        </div>
+                    </div>
+                </div>
+                <div class="left-content">
+                    <div class="img">
+                        <p>Offcial Image</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="dicon   " viewBox="0 0 14 14" style="width: 14px; height: 14px;"><g fill="#000000"><path d="M0,17.257497 L2.6406073,16.1524777 L3.79166667,18.6875 L6.5,11.8625027 C5.0781073,11.7975196 3.72394063,11.3425016 2.70833333,10.5625 L0,17.257497 Z" id="Shape"></path><path d="M10.2916667,10.5625 C9.20833333,11.3425016 7.9218573,11.7975196 6.5,11.8625027 L9.20833333,18.6875 L10.3593927,16.1524777 L13,17.257497 L10.2916667,10.5625 Z" id="Shape"></path><path d="M12.1875,5.6875 C12.1875,2.52777778 9.65972222,0 6.5,0 C3.34027778,0 0.8125,2.52777778 0.8125,5.6875 C0.8125,8.84722222 3.34027778,11.375 6.5,11.375 C9.65972222,11.375 12.1875,8.84722222 12.1875,5.6875 Z M8.71178903,8.84722222 L6.49996696,7.39376652 L4.28817792,8.84722222 L5.23611111,6.31944444 L3.34027778,5.05555556 L5.55209985,5.05555556 L6.50003304,2.52777778 L7.44796623,5.05555556 L9.65978831,5.05555556 L7.76395497,6.31944444 L8.71178903,8.84722222 Z" id="Shape"></path></g></svg>
+                    </div>
+                    <div class="wrap">
+                        <div class="col-1">
+                            <span>10+</span><br> Downloads
+                        </div>
+                        <div class="col-2">
+                            <span>1.6k</span><br> stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="upper-part">
+            <div class="grid-wrap">
+                <div class="col-1">
+                    <div class="logo">
+                        MASTER <span>TASK</span>
+                    </div>
+    
+                </div>
+                <div class="col-2">
+                    <div class="title">
+                        <h3>Why Docker</h3>
+                    </div>
+                    <div class="links">
+                        <div><a href="">Overview</a></div>
+                        <div><a href="">What is a Container</a></div>
+                    </div>
+    
+                </div>
+                <div class="col-3">
+                    <div class="wrap">
+                        <div class="title">
+                            <h3>Products</h3>
+                        </div>
+                        <div class="links">
+                            <div><a href="">Product Overview</a></div>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="title">
+                            <h3>Product Offeringd</h3>
+                        </div>
+                        <div class="links">
+                            <div><a href="">Docker Desktop</a></div>
+                            <div><a href="">Docker Hub</a></div>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="title">
+                            <h3>Features</h3>
+                        </div>
+                        <div class="links">
+                            <div><a href="">Container Runtime</a></div>
+                            <div><a href="">Developer Tools</a></div>
+                            <div><a href="">Docker App</a></div>
+                            <div><a href="">Kubernetes</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="title">
+                        <h3>Developers</h3>
+                    </div>
+                    <div class="links">
+                        <div><a href="">Getting Started</a></div>
+                        <div><a href="">Play with Docker</a></div>
+                        <div><a href="">Community</a></div>
+                        <div><a href="">Open Sources</a></div>
+                        <div><a href="">Docs</a></div>
+                        <div><a href="">Hub Release Notes</a></div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="title">
+                        <h3>Company</h3>
+                    </div>
+                    <div class="links">
+                        <div><a href="">About Us</a></div>
+                        <div><a href="">Resources</a></div>
+                        <div><a href="">Blog</a></div>
+                        <div><a href="">Customers</a></div>
+                        <div><a href="">Partners</a></div>
+                        <div><a href="">Newsroom</a></div>
+                        <div><a href="">Events and Webinars</a></div>
+                        <div><a href="">Careers</a></div>
+                        <div><a href="">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="grid-wrap">
+                <div class="col-1">
+                    <h5>© 2021 Docker Inc. All rights reserved | <a href="">Terms of Service</a> | <a href="">Privacy</a> | <a href="">Legal</a> </h5>
+                </div>
+                <div class="col-2">
+                    <div class="social-icon">
+                        <a href="" target="_blank" class="facebook">
+                            <svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2808 19.2474V11.7344H14.8154L15.1921 8.79282H12.2808V6.91915C12.2808 6.07032 12.5173 5.48915 13.7355 5.48915H15.2792V2.86657C14.5281 2.78608 13.7732 2.74722 13.0178 2.75016C10.7774 2.75016 9.23928 4.11782 9.23928 6.62857V8.78732H6.72119V11.7289H9.24478V19.2474H12.2808Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="twitter">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.91075 20.625C15.213 20.625 19.7546 13.7459 19.7546 7.79073C19.7546 7.59823 19.7546 7.40298 19.7464 7.21048C20.6306 6.57039 21.3937 5.77793 22 4.87023C21.1741 5.2344 20.2988 5.47441 19.4026 5.58248C20.3466 5.01823 21.0536 4.13043 21.3922 3.0841C20.5054 3.60952 19.5346 3.97837 18.5226 4.17448C17.8422 3.44988 16.9419 2.96986 15.9611 2.80877C14.9803 2.64767 13.9737 2.81449 13.0973 3.28339C12.2209 3.75229 11.5236 4.49709 11.1134 5.40243C10.7031 6.30778 10.6029 7.32313 10.8281 8.29123C9.03339 8.20123 7.27762 7.73499 5.67468 6.92275C4.07175 6.1105 2.65744 4.97039 1.5235 3.57635C0.947843 4.57059 0.772164 5.74665 1.03214 6.86572C1.29211 7.98478 1.96825 8.96296 2.92325 9.6016C2.20762 9.57729 1.50772 9.38512 0.88 9.0406V9.10248C0.881234 10.144 1.24205 11.1532 1.90145 11.9594C2.56086 12.7656 3.4784 13.3194 4.499 13.5272C4.11161 13.6339 3.71144 13.6871 3.30963 13.6854C3.02635 13.6862 2.74365 13.66 2.46537 13.607C2.75383 14.5036 3.3155 15.2875 4.07171 15.8489C4.82793 16.4103 5.74081 16.7211 6.6825 16.7379C5.08276 17.9943 3.10668 18.6758 1.0725 18.6725C0.714066 18.674 0.355882 18.6533 0 18.6106C2.06458 19.9268 4.46228 20.6257 6.91075 20.625V20.625Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="youtube">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.981 7.229C22.8564 6.76523 22.6123 6.3423 22.2729 6.00253C21.9336 5.66276 21.511 5.41808 21.0474 5.29297C19.3408 4.83398 12.5 4.83398 12.5 4.83398C12.5 4.83398 5.65918 4.83398 3.95264 5.29053C3.48882 5.41523 3.06598 5.65978 2.72658 5.99961C2.38718 6.33944 2.14316 6.76259 2.01904 7.22656C1.5625 8.93555 1.5625 12.5 1.5625 12.5C1.5625 12.5 1.5625 16.0645 2.01904 17.771C2.27051 18.7134 3.0127 19.4556 3.95264 19.707C5.65918 20.166 12.5 20.166 12.5 20.166C12.5 20.166 19.3408 20.166 21.0474 19.707C21.9897 19.4556 22.7295 18.7134 22.981 17.771C23.4375 16.0645 23.4375 12.5 23.4375 12.5C23.4375 12.5 23.4375 8.93555 22.981 7.229ZM10.3271 15.7715V9.22852L15.9912 12.4756L10.3271 15.7715Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="linedin">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M4.56435 6.49802V19.9997H0.248349V6.49802H4.56435ZM4.83875 2.32969L4.84035 2.41136C4.84035 3.03552 4.58595 3.59719 4.17955 3.99052L4.17795 3.99136C3.93855 4.21943 3.65811 4.39579 3.35285 4.51022C3.04759 4.62466 2.72357 4.67489 2.39955 4.65802H2.40515H2.37875C2.06217 4.67366 1.74582 4.62261 1.44863 4.50791C1.15144 4.39322 0.879523 4.21725 0.649149 3.99052L0.649949 3.99136C0.436034 3.77636 0.267553 3.51722 0.155283 3.23052C0.0430131 2.94382 -0.0105744 2.63587 -0.00205141 2.32636V2.32969L-0.00285141 2.27219C-0.00285141 1.63719 0.256349 1.06552 0.669949 0.664689L0.671549 0.663856C1.15198 0.208069 1.78641 -0.0305011 2.43555 0.000522526H2.43075C2.74879 -0.0156699 3.06674 0.0346042 3.36584 0.148383C3.66495 0.262162 3.93917 0.437145 4.17235 0.663023L4.17075 0.661356C4.38227 0.873159 4.55048 1.12733 4.66528 1.4086C4.78008 1.68986 4.83908 1.9924 4.83875 2.29802V2.33302V2.33136V2.32969ZM20.0884 12.263V19.9997H15.7859V12.7789C15.8297 11.9865 15.6414 11.199 15.246 10.5205L15.2555 10.538C15.0695 10.2651 14.8187 10.047 14.5276 9.905C14.2366 9.76304 13.9152 9.70207 13.5947 9.72802H13.6012C13.1005 9.7094 12.6098 9.87721 12.2171 10.2014L12.2219 10.198C11.8594 10.5024 11.5756 10.8962 11.3963 11.3439L11.3899 11.363C11.2804 11.7212 11.2319 12.0966 11.2467 12.4722V12.4664V20.0014H6.94435C6.96195 16.3775 6.97075 13.4391 6.97075 11.1864C6.97075 8.93358 6.96648 7.58941 6.95795 7.15386L6.94515 6.49969H11.2475V8.46136H11.2211C11.3923 8.17386 11.5691 7.92469 11.7635 7.69136L11.7571 7.69886C11.9819 7.44136 12.2235 7.20886 12.4835 7.00052L12.4963 6.99052C12.8292 6.72445 13.2069 6.52548 13.6099 6.40386L13.6339 6.39802C14.1009 6.2561 14.5851 6.18481 15.0715 6.18636H15.1348H15.1316C15.8022 6.15693 16.4709 6.27963 17.0916 6.54596C17.7122 6.8123 18.2698 7.2159 18.726 7.72886L18.7283 7.73219C19.6361 8.7633 20.09 10.2733 20.09 12.2622L20.0884 12.263Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a href="" target="_blank" class="wifi">
+                            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="wifi" viewBox="0 0 22 22" style="width: 22px; height: 22px;"><path d="M0.0078125 0V3.62618C8.47447 3.63176 15.3559 10.5255 15.3638 19H19C18.9978 13.7629 16.8685 9.0174 13.4278 5.57444C9.98706 2.13258 5.24376 0.00223424 0.0078125 0V0ZM0.00244141 6.46143V10.0887C2.36962 10.0898 4.61168 11.0204 6.28625 12.6994C7.96417 14.374 8.88914 16.6172 8.89361 18.9933V19H12.5388C12.5354 15.5436 11.1301 12.4134 8.85898 10.1412C6.58787 7.869 3.4577 6.46254 0.00244141 6.46143V6.46143ZM0.739398 18.2403V18.2392C0.738281 18.2392 0.738281 18.2392 0.738281 18.2392L0.739398 18.2403V18.2403ZM4.30539 14.6868C4.76676 15.1471 5.04715 15.7704 5.04827 16.4653C5.04715 17.1579 4.76676 17.7823 4.30762 18.2392L4.30539 18.2404C3.84737 18.6973 3.21954 18.9777 2.52246 18.9777C1.82426 18.9777 1.19867 18.6961 0.739534 18.2392C0.282632 17.7823 0 17.159 0 16.4653C0 15.7704 0.282632 15.1459 0.739534 14.6868C1.19867 14.2299 1.82426 13.9473 2.52246 13.9473C3.21954 13.9473 3.84737 14.2299 4.30539 14.6868V14.6868Z"></path></svg>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
