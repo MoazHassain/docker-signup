@@ -826,7 +826,7 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 }
 
 .search-container .content-wrap .card .grid-wrap .col-2 {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -836,14 +836,15 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 }
 
 .search-container .content-wrap .card .grid-wrap .col-2 .update {
-  margin: 5px 0 20px;
-  font-size: 12px;
+  margin: 5px 0 10px;
+  font-size: 14px;
 }
 
 .search-container .content-wrap .card .left-content {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
 }
 
 .search-container .content-wrap .card .left-content .img {
@@ -878,7 +879,6 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   padding: 10px 20px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
-  display: none;
 }
 
 .search-container .content-wrap .card .left-content .wrap span {
