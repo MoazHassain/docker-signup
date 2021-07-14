@@ -399,8 +399,8 @@ header .grid-wrap .col-2 .nav-bar .btn a:hover {
 }
 
 footer {
+  width: 100%;
   background-color: #022144;
-  margin-top: 75px;
 }
 
 footer .upper-part {
@@ -620,6 +620,7 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   min-height: 700px;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 75px;
 }
 
 @media screen and (max-width: 1280px) {

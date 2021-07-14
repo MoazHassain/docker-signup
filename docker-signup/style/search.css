@@ -399,8 +399,8 @@ header .grid-wrap .col-2 .nav-bar .btn a:hover {
 }
 
 footer {
+  width: 100%;
   background-color: #022144;
-  margin-top: 75px;
 }
 
 footer .upper-part {
@@ -605,13 +605,18 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   }
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .hero-bgimg {
   background-color: #2496ed;
 }
 
 .sub-header {
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   z-index: 9;
 }
@@ -679,7 +684,6 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 }
 
 .search-container {
-  background-color: #f6f6f6;
   z-index: -1;
 }
 
@@ -888,6 +892,10 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
 
 footer {
   margin-top: 0;
+  width: 100%;
+  background-color: #022144;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 479px) {
