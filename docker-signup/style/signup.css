@@ -834,6 +834,11 @@ footer .lower-part .grid-wrap .col-2 .social-icon a svg path {
   background-color: #007bff;
 }
 
+.hero-bgimg .container .grid-wrap .col-2 form .btn button:disabled,
+.hero-bgimg .container .grid-wrap .col-2 form .btn button[disabled] {
+  background-color: gray;
+}
+
 .hero-bgimg .container .grid-wrap .col-2 form .terms {
   font-size: 13px;
   color: #838383;

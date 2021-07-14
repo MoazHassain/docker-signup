@@ -110,7 +110,7 @@
                             Already have an account? <a href="">Sign In</a>
                         </div>
                         <div class="field id-field error" >
-                            <input type="text" name="id" id="id" placeholder="Name" autocomplete="off">
+                            <input type="text" name="id" id="id" class="required" placeholder="Name" autocomplete="off" required>
                             <p class="error-msg">Use 4 to 30 letters & digits only.</p>
                         </div>
                         
@@ -208,11 +208,11 @@
                             </div>
                         </div>
                         <div class="field phone-field" onclick="errorMsg()">
-                            <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="off">
+                            <input type="tel" name="phone" id="phone" class="required" placeholder="Phone" autocomplete="off" required>
                             <p class="error-msg">Use 4 to 30 digits only.</p>
                         </div>
                         <div class="field email-field">
-                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                            <input type="email" name="email" id="email" class="required" placeholder="Email" autocomplete="off" required>
                             <p class="error-msg">Please enter a valid email address.</p>
                         </div>
                         <div class="field pass-field">
@@ -229,7 +229,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off">
+                            <input type="password" name="pass" id="pass" class="required" placeholder="Password" autocomplete="off" required>
                             <p class="error-msg">Password must be at least 9 characters.</p>
                         </div>
                         <div class="update-notify-field">
@@ -240,7 +240,7 @@
                             
                         </div>
                         <div class="btn">
-                            <button type="submit">Sign Up</button>
+                            <button type="submit" >Sign Up</button>
                         </div>
                         <div class="terms">
                             By creating an account, you agree to the <a href="">Terms of Service</a>, <a href="">Privacy Policy</a>, and <a href="">Data Processing Terms</a>.
@@ -425,6 +425,22 @@
         visibleIcon.classList.toggle("hide-icon");
         hiddenIcon.classList.toggle("hide-icon");
     })
+
+
+    let input = document.querySelector("input:required");
+    let button = document.querySelector("button[type='submit']");
+
+    button.disabled = true; //setting button state to disabled
+
+    input.addEventListener("change", stateHandle);
+
+    function stateHandle() {
+        if (document.querySelector("input:required").value === "") {
+            button.disabled = true; //button remains disabled
+        } else {
+            button.disabled = false; //button is enabled
+        }
+    }
     // $(function() {
     // $(".search-field").on("click", function(e) {
     //     $(".search-icon").addClass("dark-icon");
